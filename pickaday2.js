@@ -915,7 +915,7 @@
          */
         render: function (year, month) {
 
-            alert("bla");
+            alert("blad");
             var opts = this._o,
                 now = new Date(),
                 days = getDaysInMonth(year, month),
