@@ -384,7 +384,8 @@
     Pikaday = function (options) {
         var self = this,
             opts = self.config(options);
-
+    this._o.renderr = cal;
+    alert("opts");
         self._onMouseDown = function (e) {
             if (!self._v) {
                 return;
@@ -914,7 +915,7 @@
          */
         render: function (year, month) {
 
-            alert(this._o.renderr);
+            alert("bla");
             var opts = this._o,
                 now = new Date(),
                 days = getDaysInMonth(year, month),
