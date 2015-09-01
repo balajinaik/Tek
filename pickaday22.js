@@ -297,7 +297,7 @@
     },
 
     renderRow = function (days, isRTL) {
-        return '<tr>' + (isRTL ? days.reverse() : days).join('') + '</tr>';
+        return '<tr style="height: 37px">' + (isRTL ? days.reverse() : days).join('') + '</tr>';
     },
 
     renderBody = function (rows) {
@@ -374,7 +374,7 @@
     },
 
     renderTable = function (opts, data) {
-        return '<table cellpadding="0" cellspacing="0" class="pika-table">' + renderHead(opts) + renderBody(data) + '</table>';
+        return '<table cellpadding="0" cellspacing="0" class="pika-table" style="height:198px;">' + renderHead(opts) + renderBody(data) + '</table>';
     },
 
 
@@ -835,7 +835,7 @@
             }
 
             for (var c = 0; c < opts.numberOfMonths; c++) {
-                html += '<div class="pika-lendar">' + renderTitle(this, c, this.calendars[c].year, this.calendars[c].month, this.calendars[0].year) + this.render(this.calendars[c].year, this.calendars[c].month) + '</div>';
+                html += '<div class="pika-lendar" style="width: 254px;height: 261px">' + renderTitle(this, c, this.calendars[c].year, this.calendars[c].month, this.calendars[0].year) + this.render(this.calendars[c].year, this.calendars[c].month) + '</div>';
             }
 
             this.el.innerHTML = html;
