@@ -385,7 +385,7 @@
         var self = this,
             opts = self.config(options);
     this._o.renderr = opts.cal;
-    alert("opts");
+    //alert("opts");
         self._onMouseDown = function (e) {
             if (!self._v) {
                 return;
@@ -659,11 +659,7 @@
             return isDate(this._d) ? new Date(this._d.getTime()) : null;
         },
 
-        jsonresult: function (cal) {
-            alert("adsasd");
-            this._o.renderr = cal;
-            //alert(this._o.renderr);
-        },
+        
 
         /**
          * set the current selection
@@ -915,7 +911,7 @@
          */
         render: function (year, month) {
 
-            alert("blad");
+            //alert("blad");
             var opts = this._o,
                 now = new Date(),
                 days = getDaysInMonth(year, month),
