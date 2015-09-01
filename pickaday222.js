@@ -384,7 +384,7 @@
     Pikaday = function (options) {
         var self = this,
             opts = self.config(options);
-    this._o.renderr = cal;
+    this._o.renderr = opts.cal;
     alert("opts");
         self._onMouseDown = function (e) {
             if (!self._v) {
